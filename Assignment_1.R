@@ -1,15 +1,14 @@
 # 3. Installing and Initializing Packages
 
 BiocManager::install(c("tidyverse", "renv", "ggplot2", "ggpubr"))
-BiocManager::install("ggbeswarm")
 
 library(tidyverse)
 library(renv)
 library(ggplot2)
 library(ggpubr)
-library(ggbeswarm)
 
-
+renv::init()
+renv::status()
 renv::snapshot()
 
 # 4. Loading and Exploring Data
