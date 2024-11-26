@@ -170,10 +170,10 @@ The which.min() function returns the index of the first minimum value in a vecto
 
 # Your code here
 filtered_june <- imputed_df %>%
-  filter(Month == 'June') %>% 
+  filter(Month == 'juni') %>% #Changed to Swedish
   group_by(Category) %>% 
   slice(-c(which.min(Value), which.max(Value)))
-filtered_df #shouldn't it be filtered_june?
+#filtered_df #shouldn't it be filtered_june?
 filtered_june
 
 ```
